@@ -2,7 +2,8 @@
 title: About
 path: /about
 ---
+## Testing to see if this works
 
-## Something cool is happening
+Does this image look good?
 
-Check this out, it's **awesome**
+![Goood boy](/images/uploads/download.jpeg "That's a good boy")
