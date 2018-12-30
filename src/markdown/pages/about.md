@@ -6,4 +6,4 @@ path: /about
 
 Does this image look good?
 
-![Goood boy](/images/uploads/download.jpeg "That's a good boy")
+![](/static/images/download.jpeg)
