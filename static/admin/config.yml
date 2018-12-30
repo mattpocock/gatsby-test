@@ -21,3 +21,37 @@ collections:
       - name: body
         label: 'Body'
         widget: markdown
+  - name: config
+    label: Config
+    file: src/markdown/config/config.md
+    create: false
+    slug: '{{slug}}'
+    fields:
+      - name: siteName
+        title: 'Site Name'
+        widget: string
+        default: 'Site Name'
+      - name: siteDescription
+        title: 'Site Description'
+        widget: string
+        default: 'Site Description'
+      - name: primaryColor
+        title: 'PrimaryColor'
+        widget: string
+        default: 'rebeccapurple'
+      - name: bodyTextColor
+        title: 'Body Text Color'
+        widget: string
+        default: '#666'
+      - name: headerTextColor
+        title: 'Header Text Color'
+        widget: string
+        default: '#666'
+      - name: bodyFontFamily
+        title: 'Body Font Family'
+        widget: string
+        default: ''
+      - name: headerFontFamily
+        title: 'Header Font Family'
+        widget: string
+        default: ''
