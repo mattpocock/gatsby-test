@@ -33,6 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
       ).then(result => {
         if (result.errors) {
           reject(result.errors);
+          return;
         }
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
           if (node.frontmatter.path) {

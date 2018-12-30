@@ -30,6 +30,10 @@ collections:
       create: false
       slug: '{{slug}}'
       fields:
+        - name: type
+          label: Type
+          widget: hidden
+          default: config
         - name: siteName
           title: 'Site Name'
           widget: string

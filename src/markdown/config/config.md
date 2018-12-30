@@ -1,4 +1,5 @@
 ---
+type: 'config'
 siteName: Louise Burfitt
 siteDescription: A wonderful translation lady who is awesome.
 primaryColor: blue
