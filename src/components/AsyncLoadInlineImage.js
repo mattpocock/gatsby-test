@@ -23,7 +23,7 @@ class AsyncLoadInlineImage extends React.PureComponent {
 
   checkIfImageIsLoaded = () => {
     const { src } = this.props;
-    if (!Image) {
+    if (typeof Image === 'undefined') {
       return false;
     }
     const image = new Image();
