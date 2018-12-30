@@ -6,42 +6,29 @@ class AsyncLoadInlineImage extends React.PureComponent {
     super(props);
     this.state = {
       hasLoaded: false,
-      shouldAsyncLoad: !this.checkIfImageIsLoaded(),
     };
   }
 
   componentDidMount() {
     const { src } = this.props;
-    if (!this.checkIfImageIsLoaded()) {
-      this.img = new Image();
-      this.img.onload = () => {
-        this.setState({ hasLoaded: true });
-      };
-      this.img.src = src;
+    this.img = new Image();
+    this.img.onload = () => {
+      this.setState({ hasLoaded: true });
+    };
+    this.img.src = src;
+    if (this.img.complete) {
+      this.setState({ hasLoaded: true });
     }
   }
 
-  checkIfImageIsLoaded = () => {
-    const { src } = this.props;
-    if (typeof Image === 'undefined') {
-      return false;
-    }
-    const image = new Image();
-    image.src = src;
-    return image.complete;
-  };
-
   /* eslint-disable jsx-a11y/alt-text */
   render() {
-    const { hasLoaded, shouldAsyncLoad } = this.state;
-    if (!shouldAsyncLoad) {
-      return <img {...this.props} />;
-    }
+    const { hasLoaded } = this.state;
     return (
       <img
         {...this.props}
         style={{
-          opacity: hasLoaded || !shouldAsyncLoad ? 1 : 0,
+          opacity: hasLoaded ? 1 : 0,
           transition: '0.75s all',
           backgroundColor: '#fafafa',
         }}
