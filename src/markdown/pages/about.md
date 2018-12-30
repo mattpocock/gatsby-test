@@ -6,4 +6,4 @@ path: /about
 
 Does this image look good?
 
-![](/static/images/download.jpeg)
+![](/images/download.jpeg)
