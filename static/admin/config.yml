@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+
+media_folder: src/images
+public_folder: /images/uploads
+
+collections:
+  - name: page
+    label: Page
+    folder: src/markdown/pages
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - label: 'Title'
+        name: title
+        widget: string
+      - name: path
+        title: 'Path'
+        widget: string
+      - name: body
+        label: 'Body'
+        widget: markdown

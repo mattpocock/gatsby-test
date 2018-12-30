@@ -1,8 +1,8 @@
 ---
 type: config
-siteName: Some Website
+siteName: Edible Gardens
 siteDescription: 'A wonderful translation lady who is awesome.'
-primaryColor: blue
+primaryColor: brown
 bodyTextColor: '#666'
 headerTextColor: '#666'
 bodyFontFamily: ''
