@@ -1,7 +1,7 @@
 ---
-type: 'config'
-siteName: Louise Burfitt
-siteDescription: A wonderful translation lady who is awesome.
+type: config
+siteName: Virtual Forge - VSTS
+siteDescription: A site to describe how we use Visual Studio Team Services.
 primaryColor: blue
 bodyTextColor: '#666'
 headerTextColor: '#666'
