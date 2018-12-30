@@ -41,7 +41,7 @@ class AsyncLoadInlineImage extends React.PureComponent {
       <img
         {...this.props}
         style={{
-          opacity: hasLoaded ? 1 : 0,
+          opacity: hasLoaded && shouldAsyncLoad ? 1 : 0,
           transition: '0.75s all',
           backgroundColor: '#fafafa',
         }}
