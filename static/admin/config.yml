@@ -54,7 +54,9 @@ collections:
           title: 'Body Font Family'
           widget: string
           default: ''
+          required: false
         - name: headerFontFamily
           title: 'Header Font Family'
           widget: string
           default: ''
+          required: false
