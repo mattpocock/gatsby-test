@@ -1,5 +1,5 @@
 ---
-siteName: Edible Gardens
+siteName: Louise Burfitt
 siteDescription: A wonderful translation lady who is awesome.
 primaryColor: blue
 bodyTextColor: '#666'
